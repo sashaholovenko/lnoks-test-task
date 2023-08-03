@@ -53,10 +53,11 @@ const NewsSection = () => {
         </div>
     }
 
+
     return (
         <div style={{width: "70%", margin: "0 auto", marginTop: 20}}>
             {news?.articles.map((item: Article) => (
-                <NewsItem item={item}/>
+                <NewsItem item={item} key={item.publishedAt}/>
             ))}
            <div style={{display: "flex", justifyContent: "center", marginTop: 20, marginBottom: 40}}>
                <button style={{fontSize: 24, background: "rgba(34,132,234,0.71)", color: "white"}} onClick={() => setItemsCount((prev) => prev + 10)}>
