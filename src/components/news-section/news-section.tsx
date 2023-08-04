@@ -2,6 +2,7 @@ import NewsItem from "../news-item/news-item.tsx";
 import {useEffect, useState} from "react";
 import axios, {AxiosResponse} from "axios";
 import {newsAPI} from "../../services/news-service.ts";
+import {Article} from "../../models/types.ts";
 
 
 const NewsSection = () => {

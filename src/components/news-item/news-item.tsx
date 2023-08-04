@@ -1,6 +1,6 @@
-import {Article} from "../news-section/news-section.tsx";
 import {FC} from "react";
 import {useNavigate} from "react-router-dom";
+import {Article} from "../../models/types.ts";
 
 
 interface NewsItemProps {
@@ -8,10 +8,8 @@ interface NewsItemProps {
 }
 
 const NewsItem: FC<NewsItemProps> = ({item}) => {
-
-
-
     const navigate = useNavigate()
+
     // TODO: here should be normal id from API, but given API doesn't give it, so handling such routes is impossible in right way
     const mockItemId = 1;
 
